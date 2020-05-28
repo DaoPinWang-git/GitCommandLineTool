@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  TestCommandLineTool
+//  GitCommandLineTool
 //
 //  Created by dpwong on 2020/5/21.
 //  Copyright © 2020 dpwong. All rights reserved.
@@ -13,7 +13,7 @@ import Foundation
 
 let args = Swift.CommandLine.arguments
 
-let path = "/Users/dpwong/Documents/CradleMaternalBaby"
+let path = "/xxxx"
 
 if args[1] == "--push" {
     let log : String
@@ -29,8 +29,8 @@ if args[1] == "--push" {
     cd \(path)
     git add .
     git commit -m '\(log)'
-    git pull origin dev_dpwong
-    git push origin dev_dpwong
+    git pull origin xxx
+    git push origin xxx
     """
     process.arguments = ["-c", cmd]
     process.launch()
@@ -46,7 +46,7 @@ if args[1] == "--pull" {
     cd \(path)
     git add .
     git commit -m '合并代码'
-    git pull origin dev_dpwong
+    git pull origin xxx
     """
     process.arguments = ["-c", cmd]
     process.launch()
