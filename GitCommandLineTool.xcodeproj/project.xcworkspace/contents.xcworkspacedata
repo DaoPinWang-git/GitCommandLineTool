@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:TestCommandLineTool.xcodeproj">
+      location = "self:/Users/dpwong/Desktop/TestCommandLineTool/GitCommandLineTool.xcodeproj">
    </FileRef>
 </Workspace>

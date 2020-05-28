@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		61DBE8342476708600053715 /* TestCommandLineTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestCommandLineTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		61DBE8342476708600053715 /* GitCommandLineTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GitCommandLineTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		61DBE8372476708600053715 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,7 +41,7 @@
 		61DBE82B2476708600053715 = {
 			isa = PBXGroup;
 			children = (
-				61DBE8362476708600053715 /* TestCommandLineTool */,
+				61DBE8362476708600053715 /* GitCommandLineTool */,
 				61DBE8352476708600053715 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,37 +49,38 @@
 		61DBE8352476708600053715 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				61DBE8342476708600053715 /* TestCommandLineTool */,
+				61DBE8342476708600053715 /* GitCommandLineTool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		61DBE8362476708600053715 /* TestCommandLineTool */ = {
+		61DBE8362476708600053715 /* GitCommandLineTool */ = {
 			isa = PBXGroup;
 			children = (
 				61DBE8372476708600053715 /* main.swift */,
 			);
-			path = TestCommandLineTool;
+			path = GitCommandLineTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61DBE8332476708600053715 /* TestCommandLineTool */ = {
+		61DBE8332476708600053715 /* GitCommandLineTool */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 61DBE83B2476708600053715 /* Build configuration list for PBXNativeTarget "TestCommandLineTool" */;
+			buildConfigurationList = 61DBE83B2476708600053715 /* Build configuration list for PBXNativeTarget "GitCommandLineTool" */;
 			buildPhases = (
 				61DBE8302476708600053715 /* Sources */,
 				61DBE8312476708600053715 /* Frameworks */,
 				61DBE8322476708600053715 /* CopyFiles */,
+				61DBE83E2476752100053715 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TestCommandLineTool;
+			name = GitCommandLineTool;
 			productName = TestCommandLineTool;
-			productReference = 61DBE8342476708600053715 /* TestCommandLineTool */;
+			productReference = 61DBE8342476708600053715 /* GitCommandLineTool */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -97,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 61DBE82F2476708600053715 /* Build configuration list for PBXProject "TestCommandLineTool" */;
+			buildConfigurationList = 61DBE82F2476708600053715 /* Build configuration list for PBXProject "GitCommandLineTool" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -110,10 +111,30 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61DBE8332476708600053715 /* TestCommandLineTool */,
+				61DBE8332476708600053715 /* GitCommandLineTool */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		61DBE83E2476752100053715 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp $BUILT_PRODUCTS_DIR/$PRODUCT_NAME /usr/local/bin/dp\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		61DBE8302476708600053715 /* Sources */ = {
@@ -261,7 +282,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		61DBE82F2476708600053715 /* Build configuration list for PBXProject "TestCommandLineTool" */ = {
+		61DBE82F2476708600053715 /* Build configuration list for PBXProject "GitCommandLineTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61DBE8392476708600053715 /* Debug */,
@@ -270,7 +291,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		61DBE83B2476708600053715 /* Build configuration list for PBXNativeTarget "TestCommandLineTool" */ = {
+		61DBE83B2476708600053715 /* Build configuration list for PBXNativeTarget "GitCommandLineTool" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				61DBE83C2476708600053715 /* Debug */,
